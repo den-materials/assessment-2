@@ -45,22 +45,9 @@ You will be working individually for this assignment, but we'll be guiding you a
 
 #### Starter code
 
-There is no starter code for this project. You will have to make your own. Here are some tips on how to get started:
 
-- Start simple! Ask yourself what the MVP (Minimum Viable Product) of this project is
-- Create HTML and CSS files that create one red square div and one blue, lined up on the left side of the screen
-- Add a keydown event listener that console logs "blue move" or "red move"
-- Replace that console log with JavaScript that moves the red or blue div a little to the right
-- Run with it from there!
-- If you are stuck on a problem, use pseudo-coding and OOP to break it down into smaller, more solvable problems
 
-#### Deliverable
-
-You should turn in your HTML, CSS, and JavaScript files as a GitHub repository (fork or separate repo).  In your readme file, include a screenshot of the webpage you've used to build your landing page.
-
-Here's a screenshot of what a game page might look like:
-
-![](assets/chicken.png)
+![](assets/ScreenShot.png)
 
 ## Additional Resources
 - JavaScript [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
