@@ -3,7 +3,7 @@ window.onload = function ready(){
 };
 
 
-
+var winWidth = window.innerWidth;
 var redBox = document.getElementById('red'); 
 var blueBox = document.getElementById('blue');
 
@@ -14,17 +14,17 @@ var blueCounter = 0;
 var redCounter = 0;
 
 function win(){
-	if(redCounter === 32){
+	if(redCounter >= winWidth/50){
 	alert("Red Win!");
-}  if(blueCounter === 32){
-	alert("Blue Wins!");
+}  if(blueCounter >= winWidth/50){
+	alert("Green Wins!");
 }
 };
 
 
 document.addEventListener("keypress", function (z){
 	var keyZ = z.which; 
-	if(keyZ === 122 && redCounter < 32 && blueCounter < 32){
+	if(keyZ === 122 && redCounter < winWidth/50 && blueCounter < winWidth/50){
        moveRed();
 	}else{
 	  document.removeEventListener("keypress", z, false);
@@ -34,7 +34,7 @@ document.addEventListener("keypress", function (z){
 
 document.addEventListener("keypress", function (p){
 	var keyP = p.which;
-	if(keyP === 112 && redCounter < 32 && blueCounter < 32){
+	if(keyP === 112 && redCounter < winWidth/50 && blueCounter < winWidth/50){
 		moveBlue();
 	}else{
 		document.removeEventListener("keypress", p, false);

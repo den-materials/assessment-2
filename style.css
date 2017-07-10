@@ -79,7 +79,7 @@ h2{
 
 h3{  /* ------------------<<<<<large background text<<<<<<<------*/
 	position:absolute;
-	color: rgba(0,0,0,0.3);
+	color: rgba(0,0,0,0.2);
 	font-family:sans-serif;
 	font-size: 300px;
 	z-index: -1;
@@ -107,6 +107,15 @@ div.boxText {
     
     line-height: 100px;
     text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+a:hover{
+	color:rgba(170, 210, 255,0.6);
 }
 
 
@@ -199,7 +208,6 @@ div.boxText {
 
 #car1{
 	display:block;
-	position: inherit;
 	margin:auto;
 }
 
@@ -222,16 +230,14 @@ footer{
 /*-------------vvvv--GAME PAGE--vvvv--------*/
 .box{
 	position:relative;
-	width:100px;
-	height:100px;
-	border:3px solid black;
-	margin:50px;
+	margin:0px;
 }
 
 #red {
-	background-color: red;
+	background-color: none;
 }
 
 #blue {
-	background-color: blue;
+	background-color: none;
 }
+
