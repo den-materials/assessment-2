@@ -78,12 +78,11 @@ h2{
 }
 
 h3{  /* ------------------<<<<<large background text<<<<<<<------*/
-	position:absolute;
 	color: rgba(0,0,0,0.2);
-	font-family:sans-serif;
-	font-size: 300px;
-	z-index: -1;
+	font-size: 210px;
 	padding-left:15px;
+	margin-top:235px;
+	margin-bottom:-400px;
 }
 
 h6{
@@ -231,13 +230,43 @@ footer{
 .box{
 	position:relative;
 	margin:0px;
+	z-index: 50;
 }
 
 #red {
+	margin-top: 375px;
 	background-color: none;
 }
 
 #blue {
+	margin-top:-150px;
 	background-color: none;
 }
 
+#trackSec{
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: -1;
+	margin:0 3%;
+	min-height: 100%;
+	min-width:600px;
+	width:94%;
+	height:auto;
+	background-color: lightblue;
+	background-size:cover;
+
+	
+}
+
+#trackPic{
+	display: block;
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:94%;
+	margin:0 3%;
+
+}
