@@ -1,0 +1,293 @@
+
+body{
+	min-width:700px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	background-color:rgba(230,230,230, 1);
+}
+
+nav{
+	z-index: 99;
+	font-size: 15px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	background: rgba(230,230,230, 1);
+}
+
+ul{
+	margin-left:-30px;
+	text-align: left;
+
+}
+
+ul.navBar{
+	display: inline;
+	margin-left: 0px;
+}
+
+
+li{
+	list-style: circle;
+	
+	
+}
+ 
+li.liLeft{
+	display: inline;
+	margin-left: 20px;
+
+	
+	
+}
+
+li.liRight{
+	display: inline;
+	margin-right: 20px;
+	
+}
+
+.textColor {
+	color: rgb(150, 190, 235);
+}
+
+
+/*------------section shared by game.html and landing.html-------------*/
+section{
+	display:block;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: -1;
+	margin:0 3%;
+	min-height: 100%;
+	min-width:600px;
+	width:94%;
+	height:auto;
+	background-color: lightblue;
+	background-size:cover;
+	box-shadow: -2px 0px 5px 1px lightgrey;
+}
+
+p{
+	font-weight: 500;
+}
+
+h2{
+	margin: 15px 0;
+	font-weight: 300;
+	font-size: 55px;
+}
+
+h3{  /* ------------------<<<<<large background text<<<<<<<------*/
+	color: rgba(0,0,0,0.2);
+	font-size: 210px;
+	padding-left:15px;
+	margin-top:235px;
+	margin-bottom:-400px;
+}
+
+h6{
+	font-weight: 300;
+	margin-top: 10px;
+
+	
+}
+
+div.boxText {
+	display:block;
+	margin:0px 45px 0px 45px;
+	text-align: center;
+	height:auto;
+}
+
+.startText {
+	display:block;
+	margin:auto;
+    margin-top: 70px;
+    
+    line-height: 100px;
+    text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+a:hover{
+	color:rgba(170, 210, 255,0.6);
+}
+
+
+
+#ulRight{
+	float:right;
+	padding-right:20px;
+
+
+}
+
+#ulLeft{
+	float:left;
+	padding-left:20px;
+}
+
+
+#topLeft{
+	display:block;
+	z-index: 99;
+	position:fixed;
+	margin-top:55px;
+	min-width:200px;
+	top: 0px;
+	width: 47%;
+	left:3%;
+	height: 45%;
+	background-color:white;
+	overflow: hide;
+
+}
+
+#space{
+	display:block;
+	width:100%;
+	height: 100%;
+	z-index:1;
+
+}
+
+#rules{
+	display: block;
+	text-align:justify;
+	position:absolute;
+	margin-top:65px;
+	min-width:200px;
+	top: 150% ;
+	width: 47%;
+	left:3%;
+	height: 49%;
+	background-color:rgba(240,240,240, 1);
+
+
+}
+
+#driver{
+	display:block;
+	height: 60%;
+	margin: auto;
+	margin-top: 75px;
+	transform: scaleX(-1);
+}
+
+#ruReady{
+    margin-top: 55px;
+	position:absolute;
+	margin-top:;
+	min-width:200px;
+	top:0px;
+	width: 47%;
+	right: 3%;
+	height:100%;
+	background-color: rgba(170, 210, 255,0.6)
+	
+}
+
+
+#rightSide{
+	display: block;
+	margin-top: 0px;
+	position:absolute;
+	margin-top:55px;
+	min-width:200px;
+	top:100%;
+	width: 47%;
+	right: 3%;
+	height:100%;
+	background-color: rgba(170, 210, 255,0.6)
+}
+
+#car1{
+	display:block;
+	margin:auto;
+}
+
+
+
+
+
+/*-------------vvvv--GAME PAGE ONLY--vvvv--------*/
+
+
+
+#red{
+	height:30%;
+	position:absolute;
+	top:60%;
+	left:0%;
+	display:block;
+	margin-top:;
+	background-color: none;
+}
+
+#blue{
+	height: 30%;
+	display:none;
+	position: absolute;
+	top:72%;
+	display:block;
+	margin-top:;
+	background-color: none;
+}
+
+/*------------trackSec lays over section bg color----------*/
+#trackSec{
+	display:block;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: -1;
+	margin:0 3%;
+	min-height: 100%;
+	min-width:600px;
+	width:94%;
+	height:auto;
+	background-color: lightblue;
+	background-size:cover;
+
+	
+}
+
+#trackPic{
+	position: fixed;
+	top:0%;
+	left:0%;
+	height:100%;
+	width:94%;
+	margin:0 3%;
+
+}
+/*-------------screens 800px and smaller-----------*/
+@media screen and (max-width: 800px){
+
+#red{
+	height:20%;
+	position:absolute;
+	top:62%;
+	left:0%;
+	display:block;
+	margin-top:;
+	background-color: none;
+}
+
+#blue{
+	height: 20%;
+	display:none;
+	position: absolute;
+	top:75%;
+	display:block;
+	margin-top:;
+	background-color: none;
+}
+}

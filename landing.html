@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Racer Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+	</head>
+</head>
+<body>
+  
+  <nav>
+    <ul class = "navBar" id="ulLeft">
+      <li class="liLeft"><a href="game.html" target="_blank">Play Game</a></li>
+    </ul>
+    <ul class = "navBar" id="ulRight">
+      <li class="liRight"><a href="https://github.com/MarkKleinfelder">GitHub</a></li>
+      <li class="liRight"><a href="http://ratheraweso.me/">Inspiration</a></li>
+    </ul>
+  </nav>
+
+	<div id="topLeft"> <!--top left box, fixed. will not move or scroll-->
+     <div class= "boxText">
+       <h2>Hello!</h2>
+       <p>You've found your way to a wonderfully simple web-based game created by me, <span class="textColor">Mark Kleinfelder</span>.</p>
+       
+       <p>Everything you see was designed using code.</p>
+       <h6><span class="textColor">(HTML, CSS, JavaScript)</span></h6>
+     </div>
+   </div>
+  
+  <div id="space"> <!--blank div to scroll begin static elements (nav bar and topLeft)-->
+    <div id="rules"> <!--starts below page, scroll in. Scrolls behind topLeft-->
+      <div class="boxText"> 
+    <h2>How to Play</h2>
+    <!--<a id="A"></a> ____target for test button-->
+      <ul>
+        <li>press your designated button ('z' or 'p') to move your player</li>
+        <li>do not hold your button down. THAT'S CHEATING!*</li>
+        <li>the first player to reach to other side WINS</li>
+         <h6><span class="textColor">* in the process of being fixed</span></h6>
+        </ul>
+       
+      </div>
+    </div>
+
+
+    <div id="ruReady"> <!--div inside of 'space' to scroll right 50% of page-->
+      <h2></h2>
+      <img id="driver" src="assets/driver.png">
+      
+    </div>
+	
+	<div id="rightSide"> <!--is below ruReady, starts off screen-->
+	  <div class="startText">
+	<h2>Start<br> your<br> Engines!</h2>
+	  </div>
+	    <div>
+	      <a href="game.html" target="_blank">      <!--link to game-->
+	      <img id="car1" src="assets/racecar1.png">
+	      </a>
+	      <!--<img id="car2" src="assets/racecar2.png"> -->
+	    </div>
+    </div>
+ 
+  <section> 
+	<h3>game</h3>
+	<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time.</h3> <!--added extra spaces in text-->
+	<!--<button onclick="window.location.href='#A'">RULES</button>   _____test button-->
+  </section>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+1. nav bar & footer
+
+2. 3 layers/ divs
+	a. top 1, fixed, upper left quarter (intro)
+	b.scrolls bottom left quarter (intructions)
+	c.scrolls, left half, content off set lower than 'b'(pctures)
