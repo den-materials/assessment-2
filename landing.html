@@ -18,7 +18,7 @@
     </ul>
   </nav>
 
-	<div id="topLeft">
+	<div id="topLeft"> <!--top left box, fixed. will not move or scroll-->
      <div class= "boxText">
        <h2>Hello!</h2>
        <p>You've found your way to a wonderfully simple web-based game created by me, <span class="textColor">Mark Kleinfelder</span>.</p>
@@ -28,10 +28,11 @@
      </div>
    </div>
   
-  <div id="space">
-    <div id="rules">
-      <div class="boxText">
+  <div id="space"> <!--blank div to scroll begin static elements (nav bar and topLeft)-->
+    <div id="rules"> <!--starts below page, scroll in. Scrolls behind topLeft-->
+      <div class="boxText"> 
     <h2>How to Play</h2>
+    <!--<a id="A"></a> ____target for test button-->
       <ul>
         <li>press your designated button ('z' or 'p') to move your player</li>
         <li>do not hold your button down. THAT'S CHEATING!*</li>
@@ -43,18 +44,18 @@
     </div>
 
 
-    <div id="ruReady">
+    <div id="ruReady"> <!--div inside of 'space' to scroll right 50% of page-->
       <h2></h2>
       <img id="driver" src="assets/driver.png">
       
     </div>
 	
-	<div id="rightSide">
+	<div id="rightSide"> <!--is below ruReady, starts off screen-->
 	  <div class="startText">
 	<h2>Start<br> your<br> Engines!</h2>
 	  </div>
 	    <div>
-	      <a href="game.html" target="_blank">
+	      <a href="game.html" target="_blank">      <!--link to game-->
 	      <img id="car1" src="assets/racecar1.png">
 	      </a>
 	      <!--<img id="car2" src="assets/racecar2.png"> -->
@@ -63,11 +64,12 @@
  
   <section> 
 	<h3>game</h3>
-	<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time.</h3>
+	<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time.</h3> <!--added extra spaces in text-->
+	<!--<button onclick="window.location.href='#A'">RULES</button>   _____test button-->
   </section>
 
 
-<footer></footer>
+
 
 </body>
 </html>

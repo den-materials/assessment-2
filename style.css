@@ -1,3 +1,4 @@
+
 body{
 	min-width:700px;
 	font-family: "Poppins", sans-serif;
@@ -51,6 +52,8 @@ li.liRight{
 	color: rgb(150, 190, 235);
 }
 
+
+/*------------section shared by game.html and landing.html-------------*/
 section{
 	display:block;
 	position: fixed;
@@ -210,42 +213,38 @@ a:hover{
 	margin:auto;
 }
 
-#car2{
-	
-}
-
-
-footer{
-
-}
 
 
 
 
+/*-------------vvvv--GAME PAGE ONLY--vvvv--------*/
 
 
 
-
-/*-------------vvvv--GAME PAGE--vvvv--------*/
-.box{
-	position:relative;
-	margin:0px;
-	z-index: 50;
-}
-
-#red {
-	margin-top: 375px;
+#red{
+	height:30%;
+	position:absolute;
+	top:60%;
+	left:0%;
+	display:block;
+	margin-top:;
 	background-color: none;
 }
 
-#blue {
-	margin-top:-150px;
+#blue{
+	height: 30%;
+	display:none;
+	position: absolute;
+	top:72%;
+	display:block;
+	margin-top:;
 	background-color: none;
 }
 
+/*------------trackSec lays over section bg color----------*/
 #trackSec{
 	display:block;
-	position:fixed;
+	position: fixed;
 	top:0;
 	left:0;
 	z-index: -1;
@@ -261,12 +260,34 @@ footer{
 }
 
 #trackPic{
-	display: block;
-	position:fixed;
-	top:0;
-	left:0;
+	position: fixed;
+	top:0%;
+	left:0%;
 	height:100%;
 	width:94%;
 	margin:0 3%;
 
+}
+/*-------------screens 800px and smaller-----------*/
+@media screen and (max-width: 800px){
+
+#red{
+	height:20%;
+	position:absolute;
+	top:62%;
+	left:0%;
+	display:block;
+	margin-top:;
+	background-color: none;
+}
+
+#blue{
+	height: 20%;
+	display:none;
+	position: absolute;
+	top:75%;
+	display:block;
+	margin-top:;
+	background-color: none;
+}
 }

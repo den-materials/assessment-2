@@ -3,36 +3,36 @@ window.onload = function ready(){
 };
 
 
-var winWidth = window.innerWidth;
+var winWidth = window.innerWidth;  //get width of window//
 var redBox = document.getElementById('red'); 
 var blueBox = document.getElementById('blue');
 
 
-var redPos = 0;
-var bluePos = 0;
-var blueCounter = 0;
-var redCounter = 0;
+var redPos = 0;       //store red position (px from start position)//
+var bluePos = 0;      //store blue position (px from start position)//
+var blueCounter = 0;  //store button 'p' clicks//
+var redCounter = 0;   //store button 'z' clicks//
 
-function win(){
-	if(redCounter >= winWidth/50){
+function win(){                      //run win function 
+   if(redCounter >= winWidth/50){    //compairs z clicks counter to 1/50 of screen width//
 	alert("Red Win!");
-}  if(blueCounter >= winWidth/50){
+}  if(blueCounter >= winWidth/50){   //compairs p clicks counter to 1/50 of screen width//
 	alert("Green Wins!");
 }
 };
 
 
-document.addEventListener("keypress", function (z){
-	var keyZ = z.which; 
+document.addEventListener("keypress", function (z){  
+	var keyZ = z.which; //check if winning conditions are met. If no, allow keypress//
 	if(keyZ === 122 && redCounter < winWidth/50 && blueCounter < winWidth/50){
-       moveRed();
+       moveRed(); //if no win conditions met, fire moveRed func//
 	}else{
-	  document.removeEventListener("keypress", z, false);
-	  win();
+	  document.removeEventListener("keypress", z, false); //remove event listener if winning cond. met//
+	  win(); //run win func//
     }
 })
 
-document.addEventListener("keypress", function (p){
+document.addEventListener("keypress", function (p){ //same as above, for p//
 	var keyP = p.which;
 	if(keyP === 112 && redCounter < winWidth/50 && blueCounter < winWidth/50){
 		moveBlue();
@@ -42,16 +42,16 @@ document.addEventListener("keypress", function (p){
 })
 
 
-function moveBlue(){
-	blueCounter += 1;
-    bluePos += 25;
-    blueBox.style.left = bluePos + "px";
+function moveBlue(){  
+	blueCounter += 1;  //on p button press, add 1 to counter//
+    bluePos += 25;     //add 25px to existing position// 
+    blueBox.style.left = bluePos + "px";  //move #blueBox with css style, adds 'px' to number//
     console.log('pressed p');
     console.log(blueCounter);
 
 }
 
-function moveRed(){
+function moveRed(){   
     redCounter += 1;
   	redPos += 25;
 	redBox.style.left = redPos + "px";
