@@ -25,6 +25,7 @@ $(document).ready(function(){
 			// checkforWIn(p2Loc);
 			$('#player1').css('transform','translateX(' + p1Loc + 'px)');
 			p1StartTime = event.timeStamp;
+			checkForWin();
 		}
 		// until randomlogic in:  if p2 hits one of the p2 keys he gets to move forward
 		if(keyNumber === 76 || keyNumber === 75 || keyNumber === 74){
@@ -33,12 +34,19 @@ $(document).ready(function(){
 			// console.log(p2Reaction);
 			p2Loc = p2Loc + 64000 / p2Reaction;
 			console.log('location: ' + p2Loc);
-			// checkforWIn(p2Loc);
 			$('#player2').css('transform','translateX(' + p2Loc + 'px)');
 			p2StartTime = event.timeStamp;
+			checkForWin();
 		}
 		// console.log(keyPressed.timeStamp);
 
 	});
+	function checkForWin(){
+		if(p1Loc>=winLine){
+			alert("Player 1 wins!");
+		}else if(p2Loc>=winLine){
+			alert("Player 2 wins!");
+		}
+	}
 
 });
