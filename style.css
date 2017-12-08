@@ -18,12 +18,17 @@ button{
 	font-size:7vh;
 	text-align:center;
 	padding:.5vh;
+	transition: transform .5s linear;
 }
 
 #player1 {
 	background: lightgreen;
+	position:relative;
+	top:15vh;
 }
 
 #player2 {
 	background: lightblue;
+	position:relative;
+	top:30vh;
 }

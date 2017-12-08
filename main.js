@@ -54,12 +54,29 @@ $(document).ready(function(){
 	function checkForWin(){
 		// if either player is ahead of the winline then they win.  Need to change alert to some html
 		if(p1Loc>=winLine){
+			$('#player1').css('transform','translateX(' + winLine + 'px)');
 			alert("Player 1 wins!");
 		}else if(p2Loc>=winLine){
 			alert("Player 2 wins!");
+			$('#player2').css('transform','translateX(' + winLine + 'px)');
 		}
 	}
 	function reseed(keyStates){
 		return keyStates[Math.floor(Math.random()*3)];
 	}
 });
+// trying to make a player object to clean up code
+// function Player(playerId,keyStates){
+// 	this.loc = 0;
+// 	this.keyStates = keyStates;
+// 	this.keyToPress = reseed(this.keyStates);
+// 	this.startTime = this.start();
+// 	this.newKeyTime = 0;
+// 	this.reactionTime=0;
+// };
+// Player.prototype = {
+// 	start: function(){
+// 		this.startTime = event.timeStamp;
+// 	}
+
+// }
