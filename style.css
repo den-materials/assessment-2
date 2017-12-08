@@ -1,34 +1,35 @@
 #container {
 	width: 100vw;
 	height: 100vh;
-	background:black;
+	background: black;
 }
 
 h1 {
-	text-align:center;
-	color:yellow;
+	text-align: center;
+	color: yellow;
 }
+
 button{
- display:none;
+ display: none;
 }
 
 .player {
 	width: 8vh;
 	height: 8vh;
 	font-size:7vh;
-	text-align:center;
-	padding:.5vh;
+	text-align: center;
+	padding: .5vh;
 	transition: transform .5s linear;
 }
 
 #player1 {
 	background: lightgreen;
-	position:relative;
-	top:15vh;
+	position: relative;
+	top: 15vh;
 }
 
 #player2 {
 	background: lightblue;
-	position:relative;
-	top:30vh;
+	position: relative;
+	top: 30vh;
 }
