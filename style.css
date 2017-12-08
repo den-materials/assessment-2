@@ -1,0 +1,80 @@
+body{
+	font-family:'Varela Round',sans-serif;
+	background-color:grey;
+
+}
+#container {
+	width: 100vw;
+	height: 100vh;
+	margin:0;
+	background-image: url("assets/road.jpg");
+	background-repeat: repeat-x;
+	background-size: auto 50vh;
+	background-position:center;
+}
+
+h1 {
+	text-align: center;
+	color: yellow;
+}
+
+#buttonHolder{
+	width:10vh;
+	height:8vh;
+	margin:0 auto;
+}
+
+button{
+	border:none;
+	background-color: yellow;
+}
+
+.player {
+	width: 15vh;
+	height: 10vh;
+	font-size:7vh;
+	text-align: center;
+	padding: .5vh;
+	transition: transform .5s linear;
+}
+
+#player1 {
+	position: relative;
+	top: 17vh;
+}
+
+#player2 {
+	position: relative;
+	top: 30vh;
+}
+
+.carDiv {
+	width: 100%;
+	height: 100%;
+}
+
+.car {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	z-index:2;
+}
+
+.letter {
+	position: relative;
+	text-align: left;
+	left:32%;
+	top: -80.2%;
+	font-size: 4vh;
+	z-index: 3;
+}
+
+#p1Letter {
+	color: white;
+}
+
+#p2Letter {
+	color: white;
+}

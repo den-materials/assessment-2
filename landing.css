@@ -1,0 +1,45 @@
+body{
+	padding:10%;
+	font-family:'Varela Round',sans-serif;
+	text-align: center;
+	background-color: #666;
+	color: yellow;
+}
+
+p{
+	padding:0 15%;
+}
+
+#carDiv {
+	position: relative;
+	left: 36vw;
+	width: 12vh;
+	height: 12vh;
+}
+
+#car {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	z-index: 2;
+}
+
+#letter {
+	position: relative;
+	text-align: left;
+	left: 30%;
+	top: -49%;
+	font-size: 4vh;
+	z-index: 3;
+	color: black;
+}
+
+a{
+	padding:1vh;
+	font-size:3vh;
+	background-color: yellow;
+	text-decoration: none;
+	color: black;
+}
