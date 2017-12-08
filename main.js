@@ -52,6 +52,7 @@ $(document).ready(function(){
 		// console.log(keyPressed.timeStamp);
 	});
 	function checkForWin(){
+		if either player is ahead of the winline then they win.  Need to change alert to some html
 		if(p1Loc>=winLine){
 			alert("Player 1 wins!");
 		}else if(p2Loc>=winLine){
