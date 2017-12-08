@@ -1,6 +1,7 @@
 console.log("this is initializing the racer logic");
 $(document).ready(function(){
-	console.log("document is ready" + event.timeStamp);
+	init = event.timeStamp;
+	console.log("document is ready" + init);
 	// starts the translater at 0px
 	let p1Loc = 0;
 	let p2Loc = 0;
@@ -18,8 +19,8 @@ $(document).ready(function(){
 	// seeds the random keystate for allowing forward movement
 	let p1KeyToPress = reseed(p1KeyStates);
 	let p2KeyToPress = reseed(p2KeyStates);
-	$('#player1').text(String.fromCharCode(p1KeyToPress));
-	$('#player2').text(String.fromCharCode(p2KeyToPress));
+	$('#p1Letter').text(String.fromCharCode(p1KeyToPress));
+	$('#p2Letter').text(String.fromCharCode(p2KeyToPress));
 	// keyup prevents the multiple firing problem
 	$('body').keyup(function(keyPressed){
 		// let keyVal = keyPressed.which();
@@ -28,26 +29,31 @@ $(document).ready(function(){
 		if(keyNumber === p1KeyToPress){
 			// reaction time will decide how far he moves
 			p1Reaction = keyPressed.timeStamp - p1StartTime;
-			console.log(p1Reaction);
-			p1Loc = p1Loc + 30000000 / (p1Reaction*p1Reaction);
+			console.log(p1Reaction + "reaction" + Math.max([(100 - p1Reaction/20),0] + 'adder'));
+			p1Loc = p1Loc + Math.max((100 - p1Reaction/20),0);
 			$('#player1').css('transform','translateX(' + p1Loc + 'px)');
 			checkForWin();
 			p1KeyToPress = reseed(p1KeyStates);
-			$('#player1').text(String.fromCharCode(p1KeyToPress));
+			$('#p1Letter').text(String.fromCharCode(p1KeyToPress));
 			p1StartTime = event.timeStamp;
+		}else if(p1KeyStates.includes(keyNumber)){
+			// penalizes random guessing by making wrong guesses reaction time be calculated from the beginning of the page launch.
+			p1StartTime = init;
 		}
 		// until randomlogic in:  if p2 hits one of the p2 keys he gets to move forward
 		if(keyNumber === p2KeyToPress){
 			// reaction time will decide how far he moves
 			p2Reaction = keyPressed.timeStamp - p2StartTime;
 			// console.log(p2Reaction);
-			p2Loc = p2Loc + 30000000 / (p2Reaction*p2Reaction);
+			p2Loc = p2Loc + Math.max((100 - p2Reaction/20),0);
 			console.log('location: ' + p2Loc);
 			$('#player2').css('transform','translateX(' + p2Loc + 'px)');
 			checkForWin();
 			p2KeyToPress = reseed(p2KeyStates);
-			$('#player2').text(String.fromCharCode(p2KeyToPress));
+			$('#p2Letter').text(String.fromCharCode(p2KeyToPress));
 			p2StartTime = event.timeStamp;
+		}else if(p2KeyStates.includes(keyNumber)){
+			p2StartTime = init;
 		}
 		// console.log(keyPressed.timeStamp);
 	});

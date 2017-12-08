@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Super Awesome Racer</title>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -12,8 +13,18 @@
       <button>Restart Game</button>
     </header>
     <main>
-      <div id = "player1" class = "player"></div>
-      <div id = "player2" class = "player"></div>
+      <div id = "player1" class = "player">
+            <div class = "carDiv">
+               <img class = "car" src="assets/redCar.png">
+            <div id = "p1Letter" class = "letter"></div>
+            </div>
+      </div>
+      <div id = "player2" class = "player">
+            <div class = "carDiv">
+              <img class = "car" src="assets/blueCar.png">
+              <div id = "p2Letter" class = "letter"></div>
+            </div>
+      </div>
     </main>
     <footer></footer>
   </div>  

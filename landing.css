@@ -1,0 +1,25 @@
+body{
+	font-family:'Varela Round',sans-serif;
+}
+
+#carDiv {
+	width: 12vh;
+	height: 12vh;
+}
+
+#car {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	z-index:2;
+}
+
+#letter {
+	position: relative;
+	left: 30%;
+	top: -47.5%;
+	font-size:4vh;
+	z-index:3;
+}
