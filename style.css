@@ -18,8 +18,15 @@ h1 {
 	color: yellow;
 }
 
+#buttonHolder{
+	width:10vh;
+	height:8vh;
+	margin:0 auto;
+}
+
 button{
- display: none;
+	border:none;
+	background-color: yellow;
 }
 
 .player {
@@ -33,12 +40,12 @@ button{
 
 #player1 {
 	position: relative;
-	top: 25vh;
+	top: 17vh;
 }
 
 #player2 {
 	position: relative;
-	top: 38vh;
+	top: 30vh;
 }
 
 .carDiv {

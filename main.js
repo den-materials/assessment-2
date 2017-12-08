@@ -70,6 +70,9 @@ $(document).ready(function(){
 	function reseed(keyStates){
 		return keyStates[Math.floor(Math.random()*3)];
 	}
+	$('button').click(function(){
+		location.reload();
+	});
 });
 // trying to make a player object to clean up code
 // function Player(playerId,keyStates){
