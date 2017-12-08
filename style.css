@@ -1,5 +1,23 @@
-.container {
+#container {
 	width: 100vw;
 	height: 100vh;
-	background:blue;
+	background:black;
+}
+
+h1 {
+	text-align:center;
+	color:yellow;
+}
+
+.player {
+	width: 8vh;
+	height: 8vh;
+}
+
+#player1 {
+	background: lightgreen;
+}
+
+#player2 {
+	background: lightblue;
 }
